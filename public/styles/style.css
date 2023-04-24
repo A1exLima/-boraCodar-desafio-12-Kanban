@@ -5,21 +5,18 @@
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  color: white;
 }
 
 :root {
   font-size: 62.5%;
-  --bc-body: #7C3AED;
-  --bc-main: #FBFAFF;
-  
-  --ff-nav: 'Inter', sans-serif;
-  --fc-nav: #CAB3FF;
-  --fc-nav-hover: #FFFFFF;
+  --bc-body: #7c3aed;
+  --bc-main: #fbfaff;
+
+  --ff-nav-main: "Inter", sans-serif;
+  --fc-nav: #cab3ff;
+  --fc-nav-hover: #ffffff;
 
   --fc-titles-main: #403937;
-  
 }
 
 body {
@@ -27,13 +24,13 @@ body {
   background: var(--bc-body);
 }
 
-.app{
+.app {
   display: grid;
   grid-template-columns: max-content 1fr;
   min-height: 100vh;
 }
 
-nav{
+nav {
   padding: 3.2rem 2.7rem 0 3.5rem;
   display: flex;
   flex-direction: column;
@@ -41,34 +38,57 @@ nav{
   gap: 6rem;
 }
 
-nav ul{
+nav ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 3.6rem;
 }
 
-nav ul li a, nav ul li a svg {
+nav ul li a,
+nav ul li a svg {
   fill: var(--fc-nav);
   display: flex;
   align-items: center;
   gap: 1.6rem;
-  font-family: var(--ff-nav);
+  font-family: var(--ff-nav-main);
   font-weight: 1.6rem;
   font-weight: 700;
   color: var(--fc-nav);
   transition: all 850ms;
 }
 
-nav ul li a:hover, nav ul li a:hover svg {
+nav ul li a:hover,
+nav ul li a:hover svg {
   color: var(--fc-nav-hover);
   fill: var(--fc-nav-hover);
 }
 
-
-main{
+main {
   background: var(--bc-main);
   border-top-left-radius: 3.2rem;
+  border-bottom-left-radius: 3.2rem;
   margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
+main div {
+  padding: 5.9rem 5.6rem 4.3rem 5.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main h1 {
+  font-family: var(--ff-nav-main);
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--fc-titles-main);
+}
+
+.user-logo {
+  max-width: 6.5rem;
+  max-height: 6.5rem;
+  border-radius: 9999rem;
+  border: 0.2rem solid var(--bc-body);
+}
