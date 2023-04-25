@@ -240,11 +240,15 @@ h2 {
   font-size: 1.1rem;
   color: var(--bc-body);
 }
+
+.card:last-child {
+  margin-bottom: 0;
+}
 /*---------------------------------*/
 
 .card-scrollbar {
   max-height: 53rem;
-  padding: 1rem 0 1rem 0;
+  padding: .5rem 0 1rem 0;
   overflow: auto;
 }
 
@@ -258,5 +262,4 @@ h2 {
   background-color: var(--fc-nav);
   border-radius: 5rem;
 }
-
 /*---------------------------------*/
