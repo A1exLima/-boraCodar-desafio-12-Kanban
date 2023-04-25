@@ -9,9 +9,13 @@
 
 :root {
   font-size: 62.5%;
+
   --bc-body: #7c3aed;
   --bc-main: #fbfaff;
   --bc-button-hover: #4c399f;
+  --bc-input: #e3e3e3;
+  --bc-card: #ffffff;
+  --bc-tag: #e2d6ff;
 
   --ff-nav-main: "Inter", sans-serif;
 
@@ -20,8 +24,9 @@
   --fc-titles-main: #403937;
   --fc-button: #ffffff;
   --fc-input: #403937f6;
+  --fc-card: #756966;
 
-  --bc-input: #e3e3e3;
+  --boxsh-color: #eae2fd;
 }
 /*-----------------------------------*/
 body {
@@ -57,9 +62,9 @@ nav ul li a svg {
   gap: 1.6rem;
   font-family: var(--ff-nav-main);
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--fc-nav);
-  transition: all 850ms;
+  transition: all 950ms;
 }
 
 nav ul li a:hover,
@@ -140,11 +145,11 @@ form {
   border-width: 0;
 }
 
-.content-input{
+.content-input {
   width: 100%;
   position: relative;
 }
-.content-input svg{
+.content-input svg {
   position: absolute;
   top: 1.5rem;
   left: 2rem;
@@ -167,9 +172,71 @@ form {
   transition: all 550ms;
 }
 
-#input-search:focus-visible{
+#input-search:focus-visible {
   outline: 0;
   opacity: 1;
-  border: 0.19rem solid var(--bc-body);  
+  border: 0.19rem solid var(--bc-body);
 }
 /*-----------------------------------*/
+.content-kanban {
+  padding: 0 3.2rem 3.2rem 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+h2 {
+  width: 100%;
+  height: 7.4rem;
+  padding: 2.4rem;
+  font-family: var(--ff-nav-main);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--fc-titles-main);
+}
+
+.card {
+  margin: 0 2.4rem 2.4rem 2.4rem;
+  min-width: 26.7rem;
+  min-height: 15.3rem;
+  background: var(--bc-card);
+  box-shadow: 0 0.4rem 1.6rem var(--boxsh-color);
+  border-radius: 0.8rem;
+  padding: 2.4rem;
+}
+
+.card h3 {
+  font-family: var(--ff-nav-main);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--fc-titles-main);
+  padding-bottom: 1rem;
+}
+
+.card p {
+  font-family: var(--ff-nav-main);
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--fc-card);
+  max-width: 100%;
+  max-height: 5.4rem;
+  margin-bottom: 1rem;
+}
+
+.tag-card {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.card span {
+  width: 7.2rem;
+  height: 2.2rem;
+  padding: .4rem .8rem;
+  background: var(--bc-tag);
+  border-radius: .8rem;
+  display: flex;
+  justify-content: center;
+  font-family: var(--ff-nav-main);
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--bc-body);
+}
