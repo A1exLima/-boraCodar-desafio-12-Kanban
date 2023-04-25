@@ -38,3 +38,5 @@ Esse projeto está sob a licença MIT.
 ---
 
 Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+
+https://a1exlima.github.io/-boraCodar-desafio-12-Kanban/
