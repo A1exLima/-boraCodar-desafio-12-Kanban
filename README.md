@@ -35,10 +35,10 @@ Este projeto trata-se de uma aplicação de Kanban com as seguintes:
 funcionalidades:
 
 - [x] Lista de tarefas (Cards) por Status (Todo, Doing, Done)
+- [x] Overflow personalizar barra Scrollbar por status
 
 Funcionalidades na fila de implementação:
 
-- [ ] Overflow personalzar barra Scrollbar por status
 - [ ] Cortar textos longos, deixar 3 linhas somente no card com ... no final do texto
 - [ ] Drag and Drop de tarefas (Cards)
 - [ ] Busca/Pesquisa de tarefas (Título e Descrição)
