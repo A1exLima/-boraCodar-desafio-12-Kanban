@@ -219,7 +219,20 @@ h2 {
   color: var(--fc-card);
   max-width: 100%;
   max-height: 5.4rem;
+  overflow: auto;
+  word-break: break-word;
   margin-bottom: 1rem;
+  padding: 0 .5rem 0 .5rem;
+}
+
+.card p::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0.3rem;
+}
+
+.card p::-webkit-scrollbar-thumb {
+  background-color: var(--fc-nav);
+  border-radius: 5rem;
 }
 
 .tag-card {
@@ -248,7 +261,7 @@ h2 {
 
 .card-scrollbar {
   max-height: 53rem;
-  padding: .5rem 0 1rem 0;
+  padding: rem 0 1rem 0;
   overflow: auto;
 }
 
