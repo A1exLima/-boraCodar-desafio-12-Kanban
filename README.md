@@ -37,10 +37,11 @@ funcionalidades:
 - [x] Lista de tarefas (Cards) por Status (Todo, Doing, Done)
 - [x] Overflow personalizar barra Scrollbar por status
 - [x] Cortar textos longos, deixar 3 linhas somente no card.
+- [x] Drag and Drop de tarefas (Cards)
+- [x] Responsividade Tela
 
 Funcionalidades na fila de implementação:
 
-- [ ] Drag and Drop de tarefas (Cards)
 - [ ] Busca/Pesquisa de tarefas (Título e Descrição)
 - [ ] Adicionar uma nova tarefa (Card)
 - [ ] Remover uma tarefa (Card)
